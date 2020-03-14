@@ -95,7 +95,88 @@ const button = document.getElementById('button');
 			document.getElementById("pb2.16").innerHTML = team[55];
 			}
 
-			document.getElementById("random").addEventListener("click", shuffler);
+			var ronde_2 = false;
+			var ronde_3 = false;
+			var ronde_4 = false;
+
+
+			document.getElementById("ronde-1").onclick = function(){
+				ronde_2=false;
+				ronde_3=false;
+				ronde_4=false;
+				alert("ronde 1 dimulai")
+			}
+			document.getElementById("ronde-2").onclick = function(){
+				ronde_2 = true;
+				alert("ronde 2 dimulai")
+				
+			}
+			document.getElementById("ronde-3").onclick = function(){
+				ronde_3 = true;
+				alert("ronde 3 dimulai")
+
+			}
+			document.getElementById("ronde-4").onclick = function(){
+				ronde_4 = true;
+				alert("ronde 4 dimulai")
+
+			}
+			document.getElementById("random").onclick = function(){
+				if (ronde_2 == false && ronde_3 == false && ronde_4 == false){
+					shuffler();
+				}
+				else if (ronde_2 == true){
+					var team_2 = [p21.innerHTML,p22.innerHTML,p23.innerHTML,p24.innerHTML,
+						p25.innerHTML,p26.innerHTML,p27.innerHTML,p28.innerHTML,p29.innerHTML,p210.innerHTML,
+						p211.innerHTML,p212.innerHTML,p213.innerHTML,p214.innerHTML,p215.innerHTML,p216.innerHTML,
+								pb21.innerHTML,pb22.innerHTML,pb23.innerHTML,
+								pb24.innerHTML,pb25.innerHTML,pb26.innerHTML,pb27.innerHTML,
+								pb28.innerHTML,pb29.innerHTML,pb210.innerHTML,pb211.innerHTML,pb212.innerHTML,
+								pb213.innerHTML,pb214.innerHTML,pb215.innerHTML,pb216.innerHTML];
+					
+								shuffle(team_2);
+								
+
+								document.getElementById("p2.1").innerHTML = team_2[0];
+								document.getElementById("p2.2").innerHTML = team_2[1];
+								document.getElementById("p2.3").innerHTML = team_2[2];
+								document.getElementById("p2.4").innerHTML = team_2[3];
+								document.getElementById("p2.5").innerHTML = team_2[4];
+								document.getElementById("p2.6").innerHTML = team_2[5];
+								document.getElementById("p2.7").innerHTML = team_2[6];
+								document.getElementById("p2.8").innerHTML = team_2[7];
+								document.getElementById("p2.9").innerHTML = team_2[8];
+								document.getElementById("p2.10").innerHTML = team_2[9];
+								document.getElementById("p2.11").innerHTML = team_2[10];
+								document.getElementById("p2.12").innerHTML = team_2[11];
+								document.getElementById("p2.13").innerHTML = team_2[12];
+								document.getElementById("p2.14").innerHTML = team_2[13];
+								document.getElementById("p2.15").innerHTML = team_2[14];
+								document.getElementById("p2.16").innerHTML = team_2[15];
+
+								document.getElementById("pb2.1").innerHTML = team_2[16];
+								document.getElementById("pb2.2").innerHTML = team_2[17];
+								document.getElementById("pb2.3").innerHTML = team_2[18];
+								document.getElementById("pb2.4").innerHTML = team_2[19];
+								document.getElementById("pb2.5").innerHTML = team_2[20];
+								document.getElementById("pb2.6").innerHTML = team_2[21];
+								document.getElementById("pb2.7").innerHTML = team_2[22];
+								document.getElementById("pb2.8").innerHTML = team_2[23];
+								document.getElementById("pb2.9").innerHTML = team_2[24];
+								document.getElementById("pb2.10").innerHTML = team_2[25];
+								document.getElementById("pb2.11").innerHTML = team_2[26];
+								document.getElementById("pb2.12").innerHTML = team_2[27];
+								document.getElementById("pb2.13").innerHTML = team_2[28];
+								document.getElementById("pb2.14").innerHTML = team_2[29];
+								document.getElementById("pb2.15").innerHTML = team_2[30];
+								document.getElementById("pb2.16").innerHTML = team_2[31];
+				}
+				else if (ronde_3 == true){
+					var team_3 = []
+				}
+			}
+
+			// document.getElementById("random").addEventListener("click", shuffler);
 			window.addEventListener("keypress", checkKeyPressed, false);
 
 			function checkKeyPressed(e) {
@@ -182,22 +263,38 @@ const button = document.getElementById('button');
 			const pb26 = document.getElementById('pb2.6');
 			const pb27 = document.getElementById('pb2.7');
 			const pb28 = document.getElementById('pb2.8');
+			const pb29 = document.getElementById('pb2.9');
+			const pb210 = document.getElementById('pb2.10');
+			const pb211 = document.getElementById('pb2.11');
+			const pb212 = document.getElementById('pb2.12');
+			const pb213 = document.getElementById('pb2.13');
+			const pb214 = document.getElementById('pb2.14');
+			const pb215 = document.getElementById('pb2.15');
+			const pb216 = document.getElementById('pb2.16');
 
 			const p31 = document.getElementById('p3.1');
 			const p32 = document.getElementById('p3.2');
 			const p33 = document.getElementById('p3.3');
 			const p34 = document.getElementById('p3.4');
+			const p35 = document.getElementById('p3.5');
+			const p36 = document.getElementById('p3.6');
+			const p37 = document.getElementById('p3.7');
+			const p38 = document.getElementById('p3.8');
 
 			const pb31 = document.getElementById('pb3.1');
 			const pb32 = document.getElementById('pb3.2');
 			const pb33 = document.getElementById('pb3.3');
 			const pb34 = document.getElementById('pb3.4');
+			const pb35 = document.getElementById('pb3.5');
+			const pb36 = document.getElementById('pb3.6');
+			const pb37 = document.getElementById('pb3.7');
+			const pb38 = document.getElementById('pb3.8');
         
 			const psfa1 = document.getElementById('psf1');
 			const psfa2 = document.getElementById('psf2');
 			
-      const psfb1 = document.getElementById('psfb1');
-      const psfb2 = document.getElementById('psfb2');
+      		const psfb1 = document.getElementById('psfb1');
+      		const psfb2 = document.getElementById('psfb2');
 
 			const pfa = document.getElementById('FinalA');
 			const pfb = document.getElementById('FinalB');
@@ -382,26 +479,26 @@ const button = document.getElementById('button');
 					psfa2.style.backgroundColor = 'gold';
 					psfa1.style.backgroundColor = 'white';
 					pfa.innerHTML = psfa2.innerHTML;}}
-
+//SEMNFAL SEMFIN SEMFIN SEMFIN SEM FIN 
 				//bracket group B round 1
 				pb11.onclick = function(){
 					pb11.style.backgroundColor = 'gold';
 					pb12.style.backgroundColor = 'white';
 					pb21.innerHTML = pb11.innerHTML;}
 				pb12.onclick = function(){
-					pb12.style.backgroundColor = 'gold';
+					p12.style.backgroundColor = 'gold';
 					pb11.style.backgroundColor = 'white';
 					pb21.innerHTML = pb12.innerHTML;}
 				pb13.onclick = function(){
 					pb13.style.backgroundColor = 'gold';
 					pb14.style.backgroundColor = 'white';
-					pb22.innerHTML = pb13.innerHTML;}
+        			pb22.innerHTML = pb13.innerHTML;}
 				pb14.onclick = function(){
-					pb14.style.backgroundColor = 'gold';
+        			pb14.style.backgroundColor = 'gold';
 					pb13.style.backgroundColor = 'white';
 					pb22.innerHTML = pb14.innerHTML;}
 				pb15.onclick = function(){
-					pb15.style.backgroundColor = 'gold';
+        			pb15.style.backgroundColor = 'gold';
 					pb16.style.backgroundColor = 'white';
 					pb23.innerHTML = pb15.innerHTML;}
 				pb16.onclick = function(){
@@ -409,16 +506,16 @@ const button = document.getElementById('button');
 					pb15.style.backgroundColor = 'white';
 					pb23.innerHTML =  pb16.innerHTML;}
 				pb17.onclick = function(){
-					pb17.style.backgroundColor = 'gold';
-					pb18.style.backgroundColor = 'white';
+        			pb17.style.backgroundColor = 'gold';
+					pb18.style.backgroundColor = ' white';
 					pb24.innerHTML = pb17.innerHTML;}
 				pb18.onclick = function(){
 					pb18.style.backgroundColor = 'gold';
 					pb17.style.backgroundColor = 'white';
-					pb24.innerHTML = pb18.innerHTML;}
+        			pb24.innerHTML = pb18.innerHTML;}
 				pb19.onclick = function(){
         			pb19.style.backgroundColor = 'gold';
-					pb20.style.backgroundColor = 'white';
+					pb110.style.backgroundColor = 'white';
 					pb25.innerHTML = pb19.innerHTML;}
 				pb110.onclick = function(){
         			pb110.style.backgroundColor = 'gold';
@@ -437,7 +534,7 @@ const button = document.getElementById('button');
 					pb114.style.backgroundColor = 'white';
 					pb27.innerHTML = pb113.innerHTML;}
 				pb114.onclick = function(){
-        			pb114.style.backgroundColor = 'gold';
+			        pb114.style.backgroundColor = 'gold';
 					pb113.style.backgroundColor = 'white';
 					pb27.innerHTML = pb114.innerHTML;}
 				pb115.onclick = function(){
@@ -445,9 +542,49 @@ const button = document.getElementById('button');
 					pb116.style.backgroundColor = 'white';
 					pb28.innerHTML = pb115.innerHTML;}
 				pb116.onclick = function(){
-        			pb116.style.backgroundColor = 'gold';
-					pb115.style.backgroundColor = 'white';
+			        pb116.style.backgroundColor = 'gold';
+					pb115.style.backgroundColor = ' white';
 					pb28.innerHTML =  pb116.innerHTML;}
+				pb117.onclick = function(){
+					pb117.style.backgroundColor = 'gold';
+					pb118.style.backgroundColor='white';
+					pb29.innerHTML = pb117.innerHTML;
+				}
+				pb118.onclick=function(){
+					pb117.style.backgroundColor='white';
+					pb118.style.backgroundColor='gold';
+					pb29.innerHTML=pb118.innerHTML;
+				}
+				pb119.onclick=function(){
+					pb119.style.backgroundColor='gold';
+					pb120.style.backgroundColor='white';
+					pb210.innerHTML=pb119.innerHTML;
+				}
+				pb120.onclick=function(){
+					pb119.style.backgroundColor='white';
+					pb120.style.backgroundColor='gold';
+					pb210.innerHTML=pb120.innerHTML;
+				}
+				pb121.onclick=function(){
+					pb121.style.backgroundColor='gold';
+					pb122.style.backgroundColor='white';
+					pb211.innerHTML=pb121.innerHTML;
+				}
+				pb122.onclick=function(){
+					pb121.style.backgroundColor='white';
+					pb122.style.backgroundColor='gold';
+					pb211.innerHTML=pb122.innerHTML;
+				}
+				pb123.onclick=function(){
+					pb123.style.backgroundColor='gold';
+					pb124.style.backgroundColor='white';
+					pb212.innerHTML=pb123.innerHTML;
+				}
+				pb124.onclick=function(){
+					pb123.style.backgroundColor='white';
+					pb124.style.backgroundColor='gold';
+					pb212.innerHTML=pb124.innerHTML;
+				}
 
         //bracket group B round 2
 				pb21.onclick = function(){
