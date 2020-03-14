@@ -4,10 +4,12 @@ const button = document.getElementById('button');
 		var team = ["Bimbel","PAZEROS","AFeNGER Bot","Fenrir","MRT BAD BOYS",".ZIP","Ekoke",
 					"Kokubilli","Kindly tigers","SUPPORT SYSTEAM","MRT WhiteWolf","TISAVE JUNIOR U-1",
 					"H8","PBB","ESC_B0T","MRT - Al Mulk","MRT-Qada","Capture","Armory","Semar","MEN",
-					"Syndicate","Hamba Tuhan","Aleph Null","ancor","Ace Slapper","GRB_46","Sad Frog",
+					"Syndicate","Hamba Tuhan","Aleph Null","ancor","Ace Slapper","VnC Electronic","Sad Frog",
 					"I-RO","Mekatronika 6","Basketball Field","Morning Stars","deadshoot","Veshi",
-					"HexaPrime","IBANEZ","intyu","Gokil","BOOM","Paradigma","Double RF","Smekza bot",
-					"Elfath_Unknown","Angkasa Robotic Club","Micro Avengers","Micro Al-Fath"];
+					"HexaPrime","IBANEZ","int a = 3","Gokil","BOOM","Paradigma","Double RF","Smekza bot",
+					"Elfath_Unknown","Angkasa Robotic Club","Micro Avengers","Micro Al-Fath","X CREATIVE",
+					"TISAVE X","SIERA X","MOTIONS X","HERO X","X GODAM","Tisave Corona-N-Cov","MRC Assidqi",
+					"MRC Master","MRC Al-Hadid"];
 
 		var text = "";
 
@@ -54,38 +56,50 @@ const button = document.getElementById('button');
 			document.getElementById("p1.21").innerHTML = team[20];
 			document.getElementById("p1.22").innerHTML = team[21];
 			document.getElementById("p1.23").innerHTML = team[22];
+			document.getElementById("p1.24").innerHTML = team[23];
+
+			document.getElementById("p2.13").innerHTML = team[24];
+			document.getElementById("p2.14").innerHTML = team[25];
+			document.getElementById("p2.15").innerHTML = team[26];
+			document.getElementById("p2.16").innerHTML = team[27];
 
 
-			document.getElementById("pb1.1").innerHTML = team[22];
-			document.getElementById("pb1.2").innerHTML = team[23];
-			document.getElementById("pb1.3").innerHTML = team[24];
-			document.getElementById("pb1.4").innerHTML = team[25];
-			document.getElementById("pb1.5").innerHTML = team[26];
-			document.getElementById("pb1.6").innerHTML = team[27];
-			document.getElementById("pb1.7").innerHTML = team[28];
-			document.getElementById("pb1.8").innerHTML = team[29];
-			document.getElementById("pb1.9").innerHTML = team[30];
-			document.getElementById("pb1.10").innerHTML = team[31];
-			document.getElementById("pb1.11").innerHTML = team[32];
-			document.getElementById("pb1.12").innerHTML = team[33];
-			document.getElementById("pb1.13").innerHTML = team[34];
-			document.getElementById("pb1.14").innerHTML = team[35];
-			document.getElementById("pb1.15").innerHTML = team[36];
-			document.getElementById("pb1.16").innerHTML = team[37];
-			document.getElementById("pb1.17").innerHTML = team[38];
-			document.getElementById("pb1.18").innerHTML = team[39];
-			document.getElementById("pb1.19").innerHTML = team[40];
-			document.getElementById("pb1.20").innerHTML = team[41];
-			document.getElementById("pb1.21").innerHTML = team[42];
-			document.getElementById("pb1.22").innerHTML = team[43];
-			document.getElementById("pb1.23").innerHTML = team[44];
+			document.getElementById("pb1.1").innerHTML = team[28];
+			document.getElementById("pb1.2").innerHTML = team[29];
+			document.getElementById("pb1.3").innerHTML = team[30];
+			document.getElementById("pb1.4").innerHTML = team[31];
+			document.getElementById("pb1.5").innerHTML = team[32];
+			document.getElementById("pb1.6").innerHTML = team[33];
+			document.getElementById("pb1.7").innerHTML = team[34];
+			document.getElementById("pb1.8").innerHTML = team[35];
+			document.getElementById("pb1.9").innerHTML = team[36];
+			document.getElementById("pb1.10").innerHTML = team[37];
+			document.getElementById("pb1.11").innerHTML = team[38];
+			document.getElementById("pb1.12").innerHTML = team[39];
+			document.getElementById("pb1.13").innerHTML = team[40];
+			document.getElementById("pb1.14").innerHTML = team[41];
+			document.getElementById("pb1.15").innerHTML = team[42];
+			document.getElementById("pb1.16").innerHTML = team[43];
+			document.getElementById("pb1.17").innerHTML = team[44];
+			document.getElementById("pb1.18").innerHTML = team[45];
+			document.getElementById("pb1.19").innerHTML = team[46];
+			document.getElementById("pb1.20").innerHTML = team[47];
+			document.getElementById("pb1.21").innerHTML = team[48];
+			document.getElementById("pb1.22").innerHTML = team[49];
+			document.getElementById("pb1.23").innerHTML = team[50];
+			document.getElementById("pb1.24").innerHTML = team[51];
+
+			document.getElementById("pb2.13").innerHTML = team[52];
+			document.getElementById("pb2.14").innerHTML = team[53];
+			document.getElementById("pb2.15").innerHTML = team[54];
+			document.getElementById("pb2.16").innerHTML = team[55];
 			}
 
 			document.getElementById("random").addEventListener("click", shuffler);
 			window.addEventListener("keypress", checkKeyPressed, false);
 
 			function checkKeyPressed(e) {
-			if (e.charCode == "46") {
+			if (e.charCode == "56") {
 				document.getElementById("random").addEventListener("click", shuffler);
 				}
 			}
