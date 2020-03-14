@@ -127,6 +127,9 @@ const button = document.getElementById('button');
 			const p120 = document.getElementById('p1.20');
 			const p121 = document.getElementById('p1.21');
 			const p122 = document.getElementById('p1.22');
+			const p123 = document.getElementById('p1.23');
+			const p124 = document.getElementById('p1.24');
+
 
 			const pb11 = document.getElementById('pb1.1');
 			const pb12 = document.getElementById('pb1.2');
@@ -150,6 +153,9 @@ const button = document.getElementById('button');
 			const pb120 = document.getElementById('pb1.20');
 			const pb121 = document.getElementById('pb1.21');
 			const pb122 = document.getElementById('pb1.22');
+			const pb123 = document.getElementById('pb1.24');
+			const pb124 = document.getElementById('pb1.24');
+
 
 			const p21 = document.getElementById('p2.1');
 			const p22 = document.getElementById('p2.2');
