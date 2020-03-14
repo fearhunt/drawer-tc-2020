@@ -153,7 +153,7 @@ const button = document.getElementById('button');
 			const pb120 = document.getElementById('pb1.20');
 			const pb121 = document.getElementById('pb1.21');
 			const pb122 = document.getElementById('pb1.22');
-			const pb123 = document.getElementById('pb1.24');
+			const pb123 = document.getElementById('pb1.23');
 			const pb124 = document.getElementById('pb1.24');
 
 
@@ -165,6 +165,14 @@ const button = document.getElementById('button');
 			const p26 = document.getElementById('p2.6');
 			const p27 = document.getElementById('p2.7');
 			const p28 = document.getElementById('p2.8');
+			const p29 = document.getElementById('p2.9');
+			const p210 = document.getElementById('p2.10');
+			const p211 = document.getElementById('p2.11');
+			const p212 = document.getElementById('p2.12');
+			const p213 = document.getElementById('p2.13');
+			const p214 = document.getElementById('p2.14');
+			const p215 = document.getElementById('p2.15');
+			const p216 = document.getElementById('p2.16');
 
 			const pb21 = document.getElementById('pb2.1');
 			const pb22 = document.getElementById('pb2.2');
@@ -259,7 +267,46 @@ const button = document.getElementById('button');
 			        p116.style.backgroundColor = 'gold';
 					p115.style.backgroundColor = ' white';
 					p28.innerHTML =  p116.innerHTML;}
-
+				p117.onclick = function(){
+					p117.style.backgroundColor = 'gold';
+					p118.style.backgroundColor='white';
+					p29.innerHTML = p117.innerHTML;
+				}
+				p118.onclick=function(){
+					p117.style.backgroundColor='white';
+					p118.style.backgroundColor='gold';
+					p29.innerHTML=p118.innerHTML;
+				}
+				p119.onclick=function(){
+					p119.style.backgroundColor='gold';
+					p120.style.backgroundColor='white';
+					p210.innerHTML=p119.innerHTML;
+				}
+				p120.onclick=function(){
+					p119.style.backgroundColor='white';
+					p120.style.backgroundColor='gold';
+					p210.innerHTML=p120.innerHTML;
+				}
+				p121.onclick=function(){
+					p121.style.backgroundColor='gold';
+					p122.style.backgroundColor='white';
+					p211.innerHTML=p121.innerHTML;
+				}
+				p122.onclick=function(){
+					p121.style.backgroundColor='white';
+					p122.style.backgroundColor='gold';
+					p211.innerHTML=p122.innerHTML;
+				}
+				p123.onclick=function(){
+					p123.style.backgroundColor='gold';
+					p124.style.backgroundColor='white';
+					p212.innerHTML=p123.innerHTML;
+				}
+				p124.onclick=function(){
+					p123.style.backgroundColor='white';
+					p124.style.backgroundColor='gold';
+					p212.innerHTML=p124.innerHTML;
+				}
         //bracket group A round 2
 				p21.onclick = function(){
 				if ((p11.style.backgroundColor === 'gold' || p12.style.backgroundColor === 'gold') && (p13.style.backgroundColor === 'gold' || p14.style.backgroundColor === 'gold')){
