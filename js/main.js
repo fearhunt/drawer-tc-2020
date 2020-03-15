@@ -105,6 +105,7 @@ const button = document.getElementById('button');
 				ronde_2=false;
 				ronde_3=false;
 				ronde_4=false;
+				sf = false;
 				alert("ronde 1 dimulai")
 			}
 			document.getElementById("ronde-2").onclick = function(){
@@ -133,12 +134,12 @@ const button = document.getElementById('button');
 				}
 				else if (sf == true){
 					var timsf = [psfa1.innerHTML,psfa2.innerHTML,psfb1.innerHTML,psfb2.innerHTML];
-					shuffle(sf);
+					shuffle(timsf);
 
-					document.getElementById("psfa.1").innerHTML = sf[0];
-					document.getElementById("psfa.2").innerHTML = sf[1];
-					document.getElementById("psfb.1").innerHTML = sf[2];
-					document.getElementById("psfb.2").innerHTML = sf[3];
+					document.getElementById("psf1").innerHTML = timsf[0];
+					document.getElementById("psf2").innerHTML = timsf[1];
+					document.getElementById("psfb1").innerHTML = timsf[2];
+					document.getElementById("psfb2").innerHTML = timsf[3];
 									
 				}
 				else if (ronde_4 == true){
