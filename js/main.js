@@ -126,7 +126,7 @@ const button = document.getElementById('button');
 					shuffler();
 				}
 				else if (ronde_4 == true){
-					var team_3 = [p41.innerHTML,p42.innerHTML,p43.innerHTML,p44.innerHTML,pb41.innerHTML,pb42.innerHTML,
+					var team_4 = [p41.innerHTML,p42.innerHTML,p43.innerHTML,p44.innerHTML,pb41.innerHTML,pb42.innerHTML,
 						pb43.innerHTML,pb44.innerHTML];
 					shuffle(team_4);
 
