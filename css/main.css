@@ -118,8 +118,8 @@ body {
     width:95%;
     width:30.8333%\9;
 }
-.split-two {
-
+ .left-split{
+    margin-left: 1.8% !important;
 }
 .split-one .round {
     margin: 0 2.5% 0 0;
