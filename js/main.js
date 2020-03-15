@@ -125,6 +125,46 @@ const button = document.getElementById('button');
 				if (ronde_2 == false && ronde_3 == false && ronde_4 == false){
 					shuffler();
 				}
+				else if (ronde_4 == true){
+					var team_3 = [p41.innerHTML,p42.innerHTML,p43.innerHTML,p44.innerHTML,pb41.innerHTML,pb42.innerHTML,
+						pb43.innerHTML,pb44.innerHTML];
+					shuffle(team_4);
+
+					document.getElementById("p4.1").innerHTML = team_4[0];
+					document.getElementById("p4.2").innerHTML = team_4[1];
+					document.getElementById("p4.3").innerHTML = team_4[2];
+					document.getElementById("p4.4").innerHTML = team_4[3];
+					
+					document.getElementById("pb4.1").innerHTML = team_4[4];
+					document.getElementById("pb4.2").innerHTML = team_4[5];
+					document.getElementById("pb4.3").innerHTML = team_4[6];
+					document.getElementById("pb4.4").innerHTML = team_4[7];					
+				}
+				else if (ronde_3 == true){
+					var team_3 = [p31.innerHTML,p32.innerHTML,p33.innerHTML,p34.innerHTML,p35.innerHTML,
+								p36.innerHTML,p37.innerHTML,p38.innerHTML,pb31.innerHTML,pb32.innerHTML,
+								pb33.innerHTML,pb34.innerHTML,pb35.innerHTML,pb36.innerHTML,pb37.innerHTML,
+								pb38.innerHTML];
+					shuffle(team_3);
+
+					document.getElementById("p3.1").innerHTML = team_3[0];
+					document.getElementById("p3.2").innerHTML = team_3[1];
+					document.getElementById("p3.3").innerHTML = team_3[2];
+					document.getElementById("p3.4").innerHTML = team_3[3];
+					document.getElementById("p3.5").innerHTML = team_3[4];
+					document.getElementById("p3.6").innerHTML = team_3[5];
+					document.getElementById("p3.7").innerHTML = team_3[6];
+					document.getElementById("p3.8").innerHTML = team_3[7];
+
+					document.getElementById("pb3.1").innerHTML = team_3[8];
+					document.getElementById("pb3.2").innerHTML = team_3[9];
+					document.getElementById("pb3.3").innerHTML = team_3[10];
+					document.getElementById("pb3.4").innerHTML = team_3[11];
+					document.getElementById("pb3.5").innerHTML = team_3[12];
+					document.getElementById("pb3.6").innerHTML = team_3[13];
+					document.getElementById("pb3.7").innerHTML = team_3[14];
+					document.getElementById("pb3.8").innerHTML = team_3[15];
+				}
 				else if (ronde_2 == true){
 					var team_2 = [p21.innerHTML,p22.innerHTML,p23.innerHTML,p24.innerHTML,
 						p25.innerHTML,p26.innerHTML,p27.innerHTML,p28.innerHTML,p29.innerHTML,p210.innerHTML,
@@ -171,31 +211,7 @@ const button = document.getElementById('button');
 								document.getElementById("pb2.15").innerHTML = team_2[30];
 								document.getElementById("pb2.16").innerHTML = team_2[31];
 				}
-				else if (ronde_3 == true){
-					var team_3 = [p31.innerHTML,p32.innerHTML,p33.innerHTML,p34.innerHTML,p35.innerHTML,
-								p36.innerHTML,p37.innerHTML,p38.innerHTML,pb31.innerHTML,pb32.innerHTML,
-								pb33.innerHTML,pb34.innerHTML,pb35.innerHTML,pb36.innerHTML,pb37.innerHTML,
-								pb38.innerHTML];
-					shuffle(team_3);
-
-					document.getElementById("p3.1").innerHTML = team_3[0];
-					document.getElementById("p3.2").innerHTML = team_3[1];
-					document.getElementById("p3.3").innerHTML = team_3[2];
-					document.getElementById("p3.4").innerHTML = team_3[3];
-					document.getElementById("p3.5").innerHTML = team_3[4];
-					document.getElementById("p3.6").innerHTML = team_3[5];
-					document.getElementById("p3.7").innerHTML = team_3[6];
-					document.getElementById("p3.8").innerHTML = team_3[7];
-
-					document.getElementById("pb3.1").innerHTML = team_3[8];
-					document.getElementById("pb3.2").innerHTML = team_3[9];
-					document.getElementById("pb3.3").innerHTML = team_3[10];
-					document.getElementById("pb3.4").innerHTML = team_3[11];
-					document.getElementById("pb3.5").innerHTML = team_3[12];
-					document.getElementById("pb3.6").innerHTML = team_3[13];
-					document.getElementById("pb3.7").innerHTML = team_3[14];
-					document.getElementById("pb3.8").innerHTML = team_3[15];
-				}
+				
 			}
 
 			// document.getElementById("random").addEventListener("click", shuffler);
