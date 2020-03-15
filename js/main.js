@@ -289,7 +289,17 @@ const button = document.getElementById('button');
 			const pb36 = document.getElementById('pb3.6');
 			const pb37 = document.getElementById('pb3.7');
 			const pb38 = document.getElementById('pb3.8');
-        
+			
+			const p41 = document.getElementById('p4.1');
+			const p42 = document.getElementById('p4.2');
+			const p43 = document.getElementById('p4.3');
+			const p44 = document.getElementById('p4.4');
+
+			const pb41 = document.getElementById('pb4.1');
+			const pb42 = document.getElementById('pb4.2');
+			const pb43 = document.getElementById('pb4.3');
+			const pb44 = document.getElementById('pb4.4');
+
 			const psfa1 = document.getElementById('psf1');
 			const psfa2 = document.getElementById('psf2');
 			
@@ -575,7 +585,7 @@ const button = document.getElementById('button');
 				p216.onclick = function(){
         			p216.style.backgroundColor = 'gold';
 					p215.style.backgroundColor = 'white';
-					p38.innerHTML = p215.innerHTML;}
+					p38.innerHTML = p216.innerHTML;}
 				
 				pb21.onclick = function(){
         			pb21.style.backgroundColor = 'gold';
@@ -641,10 +651,78 @@ const button = document.getElementById('button');
         			pb216.style.backgroundColor = 'gold';
 					pb215.style.backgroundColor = 'white';
 					pb38.innerHTML = pb215.innerHTML;}
+				
+				//ronde 3
+				p31.onclick = function(){
+        			p31.style.backgroundColor = 'gold';
+					p32.style.backgroundColor = 'white';
+					p41.innerHTML = p31.innerHTML;}
+				p32.onclick = function(){
+        			p32.style.backgroundColor = 'gold';
+					p31.style.backgroundColor = 'white';
+					p41.innerHTML = p32.innerHTML;}
+				p33.onclick = function(){
+        			p33.style.backgroundColor = 'gold';
+					p34.style.backgroundColor = 'white';
+					p42.innerHTML = p33.innerHTML;}
+				p34.onclick = function(){
+        			p34.style.backgroundColor = 'gold';
+					p33.style.backgroundColor = 'white';
+					p42.innerHTML = p34.innerHTML;}
+				p35.onclick = function(){
+        			p35.style.backgroundColor = 'gold';
+					p36.style.backgroundColor = 'white';
+					p43.innerHTML = p35.innerHTML;}
+				p36.onclick = function(){
+        			p36.style.backgroundColor = 'gold';
+					p35.style.backgroundColor = 'white';
+					p43.innerHTML = p36.innerHTML;}
+				p37.onclick = function(){
+        			p37.style.backgroundColor = 'gold';
+					p38.style.backgroundColor = 'white';
+					p44.innerHTML = p37.innerHTML;}
+				p38.onclick = function(){
+        			p38.style.backgroundColor = 'gold';
+					p37.style.backgroundColor = 'white';
+					p44.innerHTML = p38.innerHTML;}
+
+				pb31.onclick = function(){
+        			pb31.style.backgroundColor = 'gold';
+					pb32.style.backgroundColor = 'white';
+					pb41.innerHTML = pb31.innerHTML;}
+				pb32.onclick = function(){
+        			pb32.style.backgroundColor = 'gold';
+					pb31.style.backgroundColor = 'white';
+					pb41.innerHTML = pb32.innerHTML;}
+				pb33.onclick = function(){
+        			pb33.style.backgroundColor = 'gold';
+					pb34.style.backgroundColor = 'white';
+					pb42.innerHTML = pb43.innerHTML;}
+				pb34.onclick = function(){
+        			pb34.style.backgroundColor = 'gold';
+					pb33.style.backgroundColor = 'white';
+					pb42.innerHTML = pb34.innerHTML;}
+				pb35.onclick = function(){
+        			pb35.style.backgroundColor = 'gold';
+					pb36.style.backgroundColor = 'white';
+					pb43.innerHTML = pb35.innerHTML;}
+				pb36.onclick = function(){
+        			pb36.style.backgroundColor = 'gold';
+					pb35.style.backgroundColor = 'white';
+					pb43.innerHTML = pb36.innerHTML;}
+				pb37.onclick = function(){
+        			pb37.style.backgroundColor = 'gold';
+					pb38.style.backgroundColor = 'white';
+					pb44.innerHTML = pb37.innerHTML;}
+				pb38.onclick = function(){
+        			pb38.style.backgroundColor = 'gold';
+					pb37.style.backgroundColor = 'white';
+					pb44.innerHTML = pb38.innerHTML;}
+				
 				// di sini banget yang pb2	
 
 
-        //bracket group A round 3
+        /*bracket group A round 3
 				p31.onclick = function(){
 				if ((p21.style.backgroundColor === 'gold' || p22.style.backgroundColor === 'gold') && (p23.style.backgroundColor === 'gold' || p24.style.backgroundColor === 'gold')){
         			p31.style.backgroundColor = 'gold';
@@ -666,7 +744,7 @@ const button = document.getElementById('button');
 					p33.style.backgroundColor = 'white';
 					psfa2.innerHTML = p34.innerHTML;}}
 
-      	//bracket semifinal A
+      	bracket semifinal A
 				psfa1.onclick = function(){
 				if ((p31.style.backgroundColor === 'gold' || p32.style.backgroundColor === 'gold') && (p33.style.backgroundColor === 'gold' || p34.style.backgroundColor === 'gold')){
 					psfa1.style.backgroundColor = 'gold';
@@ -679,12 +757,12 @@ const button = document.getElementById('button');
 					pfa.innerHTML = psfa2.innerHTML;
 					}
 				}
-//SEMNFAL SEMFIN SEMFIN SEMFIN SEM FIN 
-				//bracket group B round 1
+SEMNFAL SEMFIN SEMFIN SEMFIN SEM FIN 
+				bracket group B round 1
 			
 			
 
-        //bracket group B round 2
+        bracket group B round 2
 				pb21.onclick = function(){
 				if ((pb11.style.backgroundColor === 'gold' || pb12.style.backgroundColor === 'gold') && (pb13.style.backgroundColor === 'gold' || pb14.style.backgroundColor === 'gold')){
         			pb21.style.backgroundColor = 'gold';
@@ -751,7 +829,7 @@ const button = document.getElementById('button');
 					pb215.style.backgroundColor = 'white';
 					pb38.innerHTML = pb215.innerHTML;}
 
-        //bracket group A round 3
+        bracket group A round 3
 				pb31.onclick = function(){
 				if ((pb21.style.backgroundColor === 'gold' || pb22.style.backgroundColor === 'gold') && (pb23.style.backgroundColor === 'gold' || pb24.style.backgroundColor === 'gold')){
         			pb31.style.backgroundColor = 'gold';
@@ -773,7 +851,7 @@ const button = document.getElementById('button');
 					pb33.style.backgroundColor = 'white';
 					psfb2.innerHTML = pb34.innerHTML;}}
 
-      	//bracket semifinal B
+      	bracket semifinal B
 				psfb1.onclick = function(){
 				if ((pb31.style.backgroundColor === 'gold' || pb32.style.backgroundColor === 'gold') && (pb33.style.backgroundColor === 'gold' || pb34.style.backgroundColor === 'gold')){
 					psfb1.style.backgroundColor = 'gold';
@@ -785,7 +863,7 @@ const button = document.getElementById('button');
 					psfb1.style.backgroundColor = 'white';
 					pfb.innerHTML = psfb2.innerHTML;}}
 				
-				//bracket final
+				bracket final
 				pfa.onclick = function(){
 				if ((psfa1.style.backgroundColor === 'gold' || psfa2.style.backgroundColor === 'gold') && (psfb1.style.backgroundColor === 'gold' || psfb2.style.backgroundColor === 'gold')){
 					pfb.style.backgroundColor = 'white';
@@ -793,4 +871,4 @@ const button = document.getElementById('button');
 				pfb.onclick = function(){
 				if ((psfa1.style.backgroundColor === 'gold' || psfa2.style.backgroundColor === 'gold') && (psfb1.style.backgroundColor === 'gold' || psfb2.style.backgroundColor === 'gold')){
 					pfa.style.backgroundColor = 'white';
-					pfb.style.backgroundColor = 'gold';}}
+					pfb.style.backgroundColor = 'gold';}}*/
