@@ -797,8 +797,45 @@ const button = document.getElementById('button');
 				psfa1.onclick = function(){
 					psfa1.style.backgroundColor = 'gold';
 					psfa2.style.backgroundColor = 'white';
+					pfa.innerHTML = psfa1.innerHTML;
+					pj3a.innerHTML = psfa2.innerHTML;
 				}
-				
+				psfa2.onclick = function(){
+					psfa2.style.backgroundColor = 'gold';
+					psfa1.style.backgroundColor = 'white';
+					pfa.innerHTML = psfa2.innerHTML;
+					pj3a.innerHTML = psfa1.innerHTML;
+				}
+				psfb1.onclick = function(){
+					psfb1.style.backgroundColor = 'gold';
+					psfb2.style.backgroundColor = 'white';
+					pfb.innerHTML = psfb1.innerHTML;
+					pj3b.innerHTML = psfb2.innerHTML;
+				}
+				psfb2.onclick = function(){
+					psfb2.style.backgroundColor = 'gold';
+					psfb1.style.backgroundColor = 'white';
+					pfb.innerHTML = psfb2.innerHTML;
+					pj3b.innerHTML = psfb1.innerHTML;
+				}
+
+				pfa.onclick = function(){
+					pfa.style.backgroundColor = 'gold';
+					pfb.style.backgroundColor = 'white';
+				}
+				pfb.onclick = function(){
+					pfb.style.backgroundColor = 'gold';
+					pfa.style.backgroundColor = 'white';
+				}
+
+				pj3a.onclick = function(){
+					pj3a.style.backgroundColor = 'gold';
+					pj3b.style.backgroundColor = 'white';
+				}
+				pj3b.onclick = function(){
+					pj3b.style.backgroundColor = 'gold';
+					pj3a.style.backgroundColor = 'white';
+				}
 				// di sini banget yang pb2	
 
 

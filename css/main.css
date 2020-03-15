@@ -99,7 +99,19 @@ body {
     text-align: center;
     padding: 230px 0\9;
 }
-    
+.champion-bottom2 {
+    float:left;
+    display:grid;
+    width: 10%;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+    -webkit-align-self:center;
+    align-self:center;
+    margin-top: -15px;
+    margin-left: 45% !important;
+    margin-right: 50%  !important;
+    text-align: center;
+    padding: 230px 0\9;
 }
 
 .champion ul {
@@ -279,7 +291,16 @@ body {
 }
 .champion-bottom h3 {
     background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+.champion-bottom2 li, .round li {
+    background-color: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); 
+}
+.champion-bottom2 h3 {
+    background-color: #fff;
+   
+
 .current li {
     opacity: 1;
 }
