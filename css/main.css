@@ -80,11 +80,17 @@ body {
     -webkit-align-self:center;
     align-self:center;
     margin-top: -15px;
+    margin-left: 200px  !important;
+    margin-right: 0  !important;
     text-align: center;
     padding: 230px 0\9;
 } 
+.championship{
+    
+}
+
 .champion ul {
-    display: ;
+    
 }
 .round {
     display:block;
