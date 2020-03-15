@@ -347,6 +347,9 @@ const button = document.getElementById('button');
 			const pfa = document.getElementById('FinalA');
 			const pfb = document.getElementById('FinalB');
 
+			const pj3a = document.getElementById('Juara3A');
+			const pj3b = document.getElementById('Juara3B')
+
 			
 
      		//bracket group A round 1
@@ -756,6 +759,45 @@ const button = document.getElementById('button');
         			pb38.style.backgroundColor = 'gold';
 					pb37.style.backgroundColor = 'white';
 					pb44.innerHTML = pb38.innerHTML;}
+
+				p41.onclick = function(){
+					p41.style.backgroundColor = 'gold';
+					p42.style.backgroundColor = 'white';
+					pfa1.innerHTML = p41.innerHTML;}
+				p42.onclick = function(){
+					p42.style.backgroundColor = 'gold';
+					p41.style.backgroundColor = 'white';
+					psfa1.innerHTML = p42.innerHTML;}
+				p43.onclick = function(){
+					p43.style.backgroundColor = 'gold';
+					p44.style.backgroundColor = 'white';
+					psfa2.innerHTML = p43.innerHTML;}
+				p44.onclick = function(){
+					p44.style.backgroundColor = 'gold';
+					p43.style.backgroundColor = 'white';
+					psfa2.innerHTML = p44.innerHTML;}
+
+				pb41.onclick = function(){
+					pb41.style.backgroundColor = 'gold';
+					pb42.style.backgroundColor = 'white';
+					pfb1.innerHTML = pb41.innerHTML;}
+				pb42.onclick = function(){
+					pb42.style.backgroundColor = 'gold';
+					pb41.style.backgroundColor = 'white';
+					psfb1.innerHTML = pb42.innerHTML;}
+				pb43.onclick = function(){
+					pb43.style.backgroundColor = 'gold';
+					pb44.style.backgroundColor = 'white';
+					psfb2.innerHTML = pb43.innerHTML;}
+				pb44.onclick = function(){
+					pb44.style.backgroundColor = 'gold';
+					pb43.style.backgroundColor = 'white';
+					psfb2.innerHTML = pb44.innerHTML;}
+
+				psfa1.onclick = function(){
+					psfa1.style.backgroundColor = 'gold';
+					psfa2.style.backgroundColor = 'white';
+				}
 				
 				// di sini banget yang pb2	
 
