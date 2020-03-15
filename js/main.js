@@ -98,6 +98,7 @@ const button = document.getElementById('button');
 			var ronde_2 = false;
 			var ronde_3 = false;
 			var ronde_4 = false;
+			var sf = false;
 
 
 			document.getElementById("ronde-1").onclick = function(){
@@ -121,9 +122,24 @@ const button = document.getElementById('button');
 				alert("ronde 4 dimulai")
 
 			}
+			document.getElementById("juara").onclick = function(){
+				sf = true;
+				alert("Semifinal dimulai")
+
+			}
 			document.getElementById("random").onclick = function(){
-				if (ronde_2 == false && ronde_3 == false && ronde_4 == false){
+				if (ronde_2 == false && ronde_3 == false && ronde_4 == false && sf == false){
 					shuffler();
+				}
+				else if (sf == true){
+					var timsf = [psfa1.innerHTML,psfa2.innerHTML,psfb1.innerHTML,psfb2.innerHTML];
+					shuffle(sf);
+
+					document.getElementById("psfa.1").innerHTML = sf[0];
+					document.getElementById("psfa.2").innerHTML = sf[1];
+					document.getElementById("psfb.1").innerHTML = sf[2];
+					document.getElementById("psfb.2").innerHTML = sf[3];
+									
 				}
 				else if (ronde_4 == true){
 					var team_4 = [p41.innerHTML,p42.innerHTML,p43.innerHTML,p44.innerHTML,pb41.innerHTML,pb42.innerHTML,
@@ -738,7 +754,7 @@ const button = document.getElementById('button');
 				pb33.onclick = function(){
         			pb33.style.backgroundColor = 'gold';
 					pb34.style.backgroundColor = 'white';
-					pb42.innerHTML = pb43.innerHTML;}
+					pb42.innerHTML = pb33.innerHTML;}
 				pb34.onclick = function(){
         			pb34.style.backgroundColor = 'gold';
 					pb33.style.backgroundColor = 'white';
@@ -763,7 +779,7 @@ const button = document.getElementById('button');
 				p41.onclick = function(){
 					p41.style.backgroundColor = 'gold';
 					p42.style.backgroundColor = 'white';
-					pfa1.innerHTML = p41.innerHTML;}
+					psfa1.innerHTML = p41.innerHTML;}
 				p42.onclick = function(){
 					p42.style.backgroundColor = 'gold';
 					p41.style.backgroundColor = 'white';
@@ -780,7 +796,7 @@ const button = document.getElementById('button');
 				pb41.onclick = function(){
 					pb41.style.backgroundColor = 'gold';
 					pb42.style.backgroundColor = 'white';
-					pfb1.innerHTML = pb41.innerHTML;}
+					psfb1.innerHTML = pb41.innerHTML;}
 				pb42.onclick = function(){
 					pb42.style.backgroundColor = 'gold';
 					pb41.style.backgroundColor = 'white';
